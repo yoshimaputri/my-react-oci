@@ -18,7 +18,7 @@
 }
 
 .image-hover-effect {
-    opacity: 80%;
+    opacity: 85%;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 15px rgba(125, 149, 201, 0.63);
 }

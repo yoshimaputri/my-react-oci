@@ -181,11 +181,11 @@ export default function IndexNavbar() {
                   Work Experience
                 </DropdownItem>
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
+                  <i className="tim-icons icon-bank" />
                   Education
                 </DropdownItem>
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
+                  <i className="tim-icons icon-world" />
                   Language's Story
                 </DropdownItem>
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
@@ -193,25 +193,9 @@ export default function IndexNavbar() {
                   Publication
                 </DropdownItem>
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
+                  <i className="tim-icons icon-palette" />
                   Hobbies
                 </DropdownItem>
-                {/* <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
-                  Documentation
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
-                  <i className="tim-icons icon-image-02" />
-                  Landing Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
-                  <i className="tim-icons icon-single-02" />
-                  Profile Page
-                </DropdownItem> */}
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>

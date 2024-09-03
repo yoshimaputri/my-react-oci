@@ -5,16 +5,11 @@
 */
 import React from "react";
 // reactstrap components
-import classnames from "classnames";
-import PerfectScrollbar from "perfect-scrollbar";
 
 import {
   Card,
   CardHeader,
   CardBody,
-  NavItem,
-  NavLink,
-  Nav,
   Table,
   TabContent,
   TabPane,
@@ -23,30 +18,9 @@ import {
   Col
 } from "reactstrap";
 
-let ps = null;
 
-export default function Expertise() {
-  const [tabs, setTabs] = React.useState(1);
-  React.useEffect(() => {
-    if (navigator.platform.indexOf("Win") > -1) {
-      document.documentElement.className += " perfect-scrollbar-on";
-      document.documentElement.classList.remove("perfect-scrollbar-off");
-      let tables = document.querySelectorAll(".table-responsive");
-      for (let i = 0; i < tables.length; i++) {
-        ps = new PerfectScrollbar(tables[i]);
-      }
-    }
-    document.body.classList.toggle("profile-page");
-    // Specify how to clean up after this effect:
-    return function cleanup() {
-      if (navigator.platform.indexOf("Win") > -1) {
-        ps.destroy();
-        document.documentElement.className += " perfect-scrollbar-off";
-        document.documentElement.classList.remove("perfect-scrollbar-on");
-      }
-      document.body.classList.toggle("profile-page");
-    };
-  }, []);
+export default function Works() {
+  
   return (
     <div
       className="section section-download section-story"
@@ -59,92 +33,12 @@ export default function Expertise() {
           <Col className="text-center" lg="8" md="12">
             <Card className="card-coin card-plain">
               <CardHeader>
-                <img
-                  alt="..."
-                  className="img-center img-fluid rounded-circle square-image"
-                  src={require("assets/img/yoshima_zepeto3.PNG")}
-                />
                 <h4 className="title">Story about Oci's Expertise</h4>
               </CardHeader>
               <CardBody>
-                <Nav
-                  className="nav-tabs-primary justify-content-center"
-                  tabs
-                >
-                  <NavItem>
-                    <NavLink
-                      className={classnames({
-                        active: tabs === 1,
-                      })}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTabs(1);
-                      }}
-                      href="#python"
-                    >
-                      Python
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className={classnames({
-                        active: tabs === 2,
-                      })}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTabs(2);
-                      }}
-                      href="#bigdata"
-                    >
-                      Big Data
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className={classnames({
-                        active: tabs === 3,
-                      })}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTabs(3);
-                      }}
-                      href="#ml"
-                    >
-                      Machine Learning
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className={classnames({
-                        active: tabs === 4,
-                      })}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTabs(4);
-                      }}
-                      href="#webdev"
-                    >
-                      Web Dev
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className={classnames({
-                        active: tabs === 5,
-                      })}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setTabs(5);
-                      }}
-                      href="#linux"
-                    >
-                      Linux
-                    </NavLink>
-                  </NavItem>
-                </Nav>
+                
                 <TabContent
                   className="tab-subcategories"
-                  activeTab={"tab" + tabs}
                 >
                   <TabPane tabId="tab1">
                     <Table className="tablesorter" responsive>
@@ -164,9 +58,6 @@ export default function Expertise() {
                     <br></br><br></br>My experience also reinforced my interest in <span className="text-primary">Reinforcement Learning</span> and <span className="text-primary">Natural Language Processing</span>. During my master’s degree, I researched IEEE 802.11ax Wi-Fi, using real-world scenario simulations and reinforcement learning to model the environment. My approach received positive feedback at the International Conference on Ubiquitous and Future Networks (<a className="text-info" target="_blank" rel="noopener noreferrer" href="http://2022.icufn.org/"><u className="bolder-txt">ICUFN</u></a>) 2022 in Barcelona, where I presented as the <u>first author</u>.</p>
                   </TabPane>
                   <TabPane tabId="tab4">
-                    <p className="text-justify">I have undertaken numerous web development projects. In each case, I determine the most suitable frameworks for the project requirements. I've built several full-stack websites using a variety of technologies, with two significant projects being an administration diploma website using Laravel and a truck e-commerce platform built with React.js. 
-                    <br></br><br></br>In my previous role, I was tasked with enhancing a website by integrating Elasticsearch and developing a custom search engine for a book database, which greatly improved the site’s functionality. Most of my web projects have been administration and statistics portals, primarily used internally by companies, so I am unable to provide direct references. However, I am currently involved in managing and maintaining the Django-based website, IPA-KR, which serves the Indonesian professional community in South Korea.
-                    <br></br><br></br>Additionally, I have experience designing websites and mobile applications using Adobe XD, where I create interactive prototypes that demonstrate user flow and functionality. Although I haven’t had formal professional experience in a web development company, I have spent the last six years honing my skills through various projects. My expertise is further showcased by Oci's website, which I developed and maintain as a testament to my web development capabilities.</p>
                   </TabPane>
                   <TabPane tabId="tab5">
                     <p className="text-justify">Linux has been a cornerstone of my technical experience since my college days, where I primarily used it for networking purposes. I began by creating simple command-line scripts in Linux and later relied on it for remote-related work in various projects. Today, I <span className="text-success">regularly work with clients on their servers, which are often Linux-based</span>.
