@@ -79,6 +79,11 @@ export default function IndexNavbar() {
       .getElementById("story-section")
       .scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToWorkExperience = () => {
+    document
+      .getElementById("works-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
@@ -176,7 +181,7 @@ export default function IndexNavbar() {
                 Get to know me
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                <DropdownItem onClick={scrollToWorkExperience}>
                   <i className="tim-icons icon-laptop" />
                   Work Experience
                 </DropdownItem>
