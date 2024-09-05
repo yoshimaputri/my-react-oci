@@ -70,19 +70,16 @@ export default function IndexNavbar() {
     setCollapseOut("");
   };
   const scrollToDownload = () => {
-    document
-      .getElementById("download-section")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("download-section").scrollIntoView({ behavior: "smooth" });
   };
   const scrollToStoryExpertise = () => {
-    document
-      .getElementById("story-section")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("story-section").scrollIntoView({ behavior: "smooth" });
   };
   const scrollToWorkExperience = () => {
-    document
-      .getElementById("works-section")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("works-section").scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToEdu = () => {
+    document.getElementById("edu-section").scrollIntoView({ behavior: "smooth" });
   };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
@@ -185,7 +182,7 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-laptop" />
                   Work Experience
                 </DropdownItem>
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                <DropdownItem onClick={scrollToEdu}>
                   <i className="tim-icons icon-bank" />
                   Education
                 </DropdownItem>

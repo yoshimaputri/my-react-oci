@@ -35,6 +35,7 @@ import JavaScript from "views/IndexSections/JavaScript.js";
 // import NucleoIcons from "views/IndexSections/NucleoIcons.js";
 import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
+import Education from "./IndexSections/Education";
 // import Download from "views/IndexSections/Download.js";
 
 export default function Index() {
@@ -53,6 +54,7 @@ export default function Index() {
         <div className="main">
           <Expertise />
           <Works />
+          <Education />
           <Basics />
           <Navbars />
           <Tabs />
