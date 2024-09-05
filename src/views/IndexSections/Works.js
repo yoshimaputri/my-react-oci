@@ -46,6 +46,14 @@ export default function Works() {
     document.getElementsByClassName("minimize-btn")[0].classList.toggle('show');
     document.getElementById("works-section").scrollIntoView({ behavior: "smooth" });
   };
+  const today = new Date();
+  const startDate = new Date(2023, 4);  // Month is zero-indexed (4 means May)
+  let years = today.getFullYear() - startDate.getFullYear();
+  let months = today.getMonth() - startDate.getMonth();
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
   return (
     <div
       className="section section-download section-works"
@@ -61,7 +69,7 @@ export default function Works() {
               <CardBody className="text-left padding-more-right">
                 <Row>
                   <Col lg="8"><h4 className="work-title">Big Data Engineer <a className="company-name" target="_blank" rel="noopener noreferrer" href="https://www.ourcoms.kr/">@ Ourcoms</a>{' '}<ReactCountryFlag className="font-size-lg" countryCode="KR" svg /></h4></Col>
-                  <Col className="text-right" lg="4"><p className="total-years">{' '}1 year 5 months</p></Col>
+                  <Col className="text-right" lg="4"><p className="total-years">{years} years {months} months</p></Col>
                 </Row>
                 <p className="transparent">May 2023 - Present</p>
                 <ul className="text-justify">

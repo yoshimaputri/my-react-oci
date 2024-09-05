@@ -38,6 +38,9 @@ export default function PageHeader() {
               <h3 className="h3-desc">
                 A seasoned IT professional with a strong foundation in Computer Science.
               </h3>
+              <a className="btn btn-default" target="_blank" rel="noopener noreferrer" href="mailto:yoshimaputri@gmail.com">
+                Send Email <i className="fa fa-envelope icon-middle" />
+              </a>
             </Col>
             <Col className="ml-auto mr-auto" md="3" xl="3">
               <img
