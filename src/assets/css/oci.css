@@ -227,6 +227,52 @@
     background-color: rgba(197, 51, 255, 0.795);
 }
 
+.hobbies-desc {
+    margin-top: -90px;
+}
+
+.hobbies-desc p {
+    text-align: justify !important;
+    /* font-family: none; */
+}
+
+.hobbies-desc h5 {
+    font-size: 7rem;
+}
+
+.hobbies-desc h1 {
+    top: 92px !important;
+}
+
+#hobbies-section .section {
+    padding-top: 10%;
+}
+
+.big-icon-back {
+    font-size: xx-large;
+}
+
+.tab-subcategories Table {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.single-line {
+    border: 1px solid;
+}
+
+.mov-title {
+    text-align: center;
+}
+
+.modal-mov .modal-dialog {
+    max-width: 900px;
+    /* transform: none; */
+    transform: translate(0, 10%) !important;
+    /* transition: transform 0.3s ease-out; */
+}
+
+
 /* -- COLOR MAP --
 $default:       #344675 !default;
 $primary:       #e14eca !default;

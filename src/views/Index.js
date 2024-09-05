@@ -36,6 +36,7 @@ import JavaScript from "views/IndexSections/JavaScript.js";
 import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Education from "./IndexSections/Education";
+import Hobbies from "./IndexSections/Hobbies";
 // import Download from "views/IndexSections/Download.js";
 
 export default function Index() {
@@ -55,6 +56,7 @@ export default function Index() {
           <Expertise />
           <Works />
           <Education />
+          <Hobbies />
           <Basics />
           <Navbars />
           <Tabs />

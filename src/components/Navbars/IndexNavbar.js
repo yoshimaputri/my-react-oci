@@ -81,6 +81,9 @@ export default function IndexNavbar() {
   const scrollToEdu = () => {
     document.getElementById("edu-section").scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToHobbies = () => {
+    document.getElementById("hobbies-section").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
@@ -194,7 +197,7 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-paper" />
                   Publication
                 </DropdownItem>
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                <DropdownItem onClick={scrollToHobbies}>
                   <i className="tim-icons icon-palette" />
                   Hobbies
                 </DropdownItem>
