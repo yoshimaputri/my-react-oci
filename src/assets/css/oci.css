@@ -272,6 +272,18 @@
     /* transition: transform 0.3s ease-out; */
 }
 
+.footer-info {
+    justify-content: center;
+}
+
+.footer-info .title {
+    margin: 0px !important;
+}
+
+.footer-info div {
+    color: white;
+}
+
 
 /* -- COLOR MAP --
 $default:       #344675 !default;

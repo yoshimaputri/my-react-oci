@@ -117,7 +117,7 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                  Oci's
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -189,10 +189,10 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-bank" />
                   Education
                 </DropdownItem>
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                {/* <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i className="tim-icons icon-world" />
                   Language's Story
-                </DropdownItem>
+                </DropdownItem> */}
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i className="tim-icons icon-paper" />
                   Publication
