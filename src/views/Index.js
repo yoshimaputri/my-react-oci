@@ -27,6 +27,7 @@ import Expertise from "views/IndexSections/Expertise.js";
 import Works from "views/IndexSections/Works.js";
 import Education from "./IndexSections/Education";
 import Hobbies from "./IndexSections/Hobbies";
+import Projects from "./IndexSections/Projects";
 
 export default function Index() {
   React.useEffect(() => {
@@ -46,6 +47,7 @@ export default function Index() {
           <Works />
           <Education />
           <Hobbies />
+          <Projects />
         </div>
         <Footer />
       </div>

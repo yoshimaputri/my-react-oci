@@ -284,6 +284,32 @@
     color: white;
 }
 
+.project-row {
+    text-align: center;
+}
+
+.collage-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.collage-row div div {
+    border: none;
+}
+
+.collage-row div div div:hover {
+    opacity: 80%;
+}
+
+.collage-row h5 {
+    text-align: right;
+    padding-top: 5px;
+}
+
+.h5-paragraph {
+    text-align: justify !important;
+}
 
 /* -- COLOR MAP --
 $default:       #344675 !default;

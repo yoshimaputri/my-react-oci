@@ -1,19 +1,7 @@
 /*!
-
 =========================================================
-* BLK Design System React - v1.2.2
+* Updated by Yoshima Putri
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 */
 import React from "react";
 import classnames from "classnames";
@@ -75,7 +63,7 @@ export default function Education() {
                       <div><i class="tim-icons icon-laptop icon-primary"></i>Major: Computer Engineering </div>
                       <div><i class="tim-icons icon-trophy icon-primary"></i>GPA: 4.38/4.50</div>
                       <div><i class="tim-icons icon-money-coins icon-primary"></i><a target="_blank" rel="noopener noreferrer" href="https://smartfactory.pusan.ac.kr/smartfactory/index..do">Grand-ICT Laboratory Scholarship</a></div>
-                      <div><i class="tim-icons icon-badge icon-primary"></i>Thesis: <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/9829663">Dynamic Adaptive Agent with Critical Movement Detection for the Next Generation of Spatial Reuse</a></div>
+                      <div><i class="tim-icons icon-badge icon-primary"></i>Publication: <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/9829663">Dynamic Adaptive Agent with Critical Movement Detection for the Next Generation of Spatial Reuse</a></div>
                       <div><i class="tim-icons icon-components icon-primary"></i>Advanced Course:</div>
                       <div className="badges-course">
                         <p>Big Data Processing Platform</p>

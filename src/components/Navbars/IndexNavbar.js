@@ -69,8 +69,8 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  const scrollToDownload = () => {
-    document.getElementById("download-section").scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () => {
+    document.getElementById("project-section").scrollIntoView({ behavior: "smooth" });
   };
   const scrollToStoryExpertise = () => {
     document.getElementById("story-section").scrollIntoView({ behavior: "smooth" });
@@ -193,10 +193,10 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-world" />
                   Language's Story
                 </DropdownItem> */}
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                {/* <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i className="tim-icons icon-paper" />
                   Publication
-                </DropdownItem>
+                </DropdownItem> */}
                 <DropdownItem onClick={scrollToHobbies}>
                   <i className="tim-icons icon-palette" />
                   Hobbies
@@ -216,7 +216,7 @@ export default function IndexNavbar() {
               <Button
                 className="nav-link d-none d-lg-block"
                 color="default"
-                onClick={scrollToDownload}
+                onClick={scrollToProjects}
               >
                 <i className="tim-icons icon-notes" /> Projects
               </Button>
