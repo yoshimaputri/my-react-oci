@@ -311,6 +311,11 @@
     text-align: justify !important;
 }
 
+.link-no-pad {
+    padding: 0px !important;
+    font-weight: 400 !important;
+}
+
 /* -- COLOR MAP --
 $default:       #344675 !default;
 $primary:       #e14eca !default;

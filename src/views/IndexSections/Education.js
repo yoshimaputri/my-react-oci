@@ -62,8 +62,8 @@ export default function Education() {
                     <div className="edu-details">
                       <div><i class="tim-icons icon-laptop icon-primary"></i>Major: Computer Engineering </div>
                       <div><i class="tim-icons icon-trophy icon-primary"></i>GPA: 4.38/4.50</div>
-                      <div><i class="tim-icons icon-money-coins icon-primary"></i><a target="_blank" rel="noopener noreferrer" href="https://smartfactory.pusan.ac.kr/smartfactory/index..do">Grand-ICT Laboratory Scholarship</a></div>
-                      <div><i class="tim-icons icon-badge icon-primary"></i>Publication: <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/9829663">Dynamic Adaptive Agent with Critical Movement Detection for the Next Generation of Spatial Reuse</a></div>
+                      <div><i class="tim-icons icon-money-coins icon-primary"></i><a className="btn-link btn-info link-no-pad" target="_blank" rel="noopener noreferrer" href="https://smartfactory.pusan.ac.kr/smartfactory/index..do">Grand-ICT Laboratory Scholarship</a></div>
+                      <div><i class="tim-icons icon-badge icon-primary"></i>Publication: <a className="btn-link btn-primary link-no-pad" target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/9829663">Dynamic Adaptive Agent with Critical Movement Detection for the Next Generation of Spatial Reuse</a></div>
                       <div><i class="tim-icons icon-components icon-primary"></i>Advanced Course:</div>
                       <div className="badges-course">
                         <p>Big Data Processing Platform</p>
