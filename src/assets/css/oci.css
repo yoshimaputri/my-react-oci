@@ -21,6 +21,16 @@
     text-align: justify;
 }
 
+@media (max-width: 600px) {
+    #root {
+        overflow-x: hidden;
+    }
+    .image-hover-effect {
+        width: 50%;
+        top: -80px;
+    }
+}
+
 .image-hover-effect {
     opacity: 85%;
     transition: all 0.3s ease-in-out;
