@@ -182,6 +182,10 @@ $theme-colors: map-merge((
   "darker":       $darker
 ), $theme-colors);
 
+@function theme-color($key) {
+  @return map-get($theme-colors, $key);
+}
+
 $brand-colors: () !default;
 $brand-colors: map-merge((
   "facebook":     $facebook,

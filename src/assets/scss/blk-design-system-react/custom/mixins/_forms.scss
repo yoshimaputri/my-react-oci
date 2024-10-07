@@ -77,8 +77,8 @@
         color: $color;
 
         &::before {
-          background-color: lighten($color, 25%);
-          border-color: lighten($color, 25%);
+          background-color: color.adjust($color, $lightness: 25%);
+          border-color: color.adjust($color, $lightness: 25%);
         }
       }
 
@@ -89,8 +89,8 @@
 
       &:checked {
         ~ .custom-control-label::before {
-          @include gradient-bg(lighten($color, 10%));
-          border-color: lighten($color, 25%);
+          @include gradient-bg(color.adjust($color, $lightness: 10%));
+          border-color: color.adjust($color, $lightness: 25%);
         }
       }
 
