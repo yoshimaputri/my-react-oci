@@ -31,10 +31,29 @@ import Projects from "./IndexSections/Projects";
 
 export default function Index() {
   React.useEffect(() => {
-    document.body.classList.toggle("index-page");
-    // Specify how to clean up after this effect:
-    return function cleanup() {
-      document.body.classList.toggle("index-page");
+    // Add Google Tag script
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-22FHXSF0SY';
+    script.async = true;
+    document.head.appendChild(script);
+
+    const inlineScript = document.createElement('script');
+    inlineScript.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-22FHXSF0SY');
+    `;
+    document.head.appendChild(inlineScript);
+
+    // Toggle body class
+    document.body.classList.toggle('index-page');
+
+    // Cleanup function
+    return () => {
+      document.body.classList.toggle('index-page');
+      document.head.removeChild(script);
+      document.head.removeChild(inlineScript);
     };
   }, []);
   return (
