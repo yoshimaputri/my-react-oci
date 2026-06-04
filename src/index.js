@@ -25,6 +25,7 @@ import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
+import MotivationalQuotes from "views/MotivationalQuotes.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
@@ -35,6 +36,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/oci-page" element={<Index />} />
+      <Route path="/motivational-quotes" element={<MotivationalQuotes />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />

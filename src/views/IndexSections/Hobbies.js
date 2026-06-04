@@ -5,246 +5,227 @@
 */
 import React from "react";
 import classnames from "classnames";
-// reactstrap components
 import {
-  Container,
-  Row,
-  Col,
-  UncontrolledCarousel,
   Button,
+  Col,
+  Container,
+  Modal,
+  ModalBody,
+  Nav,
   NavItem,
   NavLink,
-  Nav,
-  Table,
+  Row,
   TabContent,
   TabPane,
-  Modal,
 } from "reactstrap";
-import ReactCountryFlag from "react-country-flag";
 
-const carouselItems = [
+const hobbies = [
+  { name: "Tennis", icon: "fas fa-baseball-ball" },
+  { name: "Ping-pong", icon: "fas fa-table-tennis" },
+  { name: "Billiard", icon: "fas fa-circle" },
+  { name: "Reading Books", icon: "fas fa-book" },
+  { name: "Watching Movies / Series", icon: "fas fa-film" },
+  { name: "Traveling", icon: "fas fa-plane" },
+  { name: "Photography & Videography", icon: "fas fa-camera" },
+];
+
+const movieCollections = [
   {
-    src: require("assets/img/badminton.jpg"),
-    altText: "Slide 1",
-    caption: "Badminton",
+    id: "indonesia",
+    label: "Indonesia",
+    flag: "ID",
+    movies: [
+      {
+        title: "The Big Four (2022)",
+        trailer: "https://www.youtube.com/embed/sQQJEiESrK0?si=AkoW5zgnm39-9Dep",
+        synopsis:
+          "An elite assassin is targeted by murderous gangsters after sparing a girl's life during a massacre.",
+      },
+      {
+        title: "Sore (Tropicana Web Series 2017)",
+        trailer: "https://www.youtube.com/embed/GlfaHW02seM?si=P_GnmYcfKS8XKr-S",
+        synopsis:
+          "Jonathan is an Indonesian man living in Italy when a woman named Sore appears and claims she is his wife from the future.",
+      },
+    ],
   },
   {
-    src: require("assets/img/netflix.jpg"),
-    altText: "Slide 2",
-    caption: "Watching Movie / Series",
+    id: "korea",
+    label: "South Korea",
+    flag: "KR",
+    movies: [
+      {
+        title: "Past Lives (2023)",
+        trailer: "https://www.youtube.com/embed/kA244xewjcI?si=J7ER0Pektli55FWl",
+        synopsis:
+          "Two childhood sweethearts reunite for one fateful week and confront destiny, love, and the choices that shape a life.",
+      },
+      {
+        title: "Happiness (K-Drama Series 2021)",
+        trailer: "https://www.youtube.com/embed/gqhUlldiLEo?si=AJd4ojTt_6gG29AG",
+        synopsis:
+          "Residents of a newly built high-rise apartment are sealed inside after a new infectious disease breaks out.",
+      },
+    ],
   },
   {
-    src: require("assets/img/billiard.jfif"),
-    altText: "Slide 3",
-    caption: "Billiard",
+    id: "usa",
+    label: "United States",
+    flag: "US",
+    movies: [
+      {
+        title: "Crazy Rich Asians (2018)",
+        trailer: "https://www.youtube.com/embed/ZQ-YX-5bAs0?si=hmSul5BsBf-zx7xM",
+        synopsis:
+          "Rachel travels to Singapore with her boyfriend and discovers that his family is extremely wealthy and difficult to impress.",
+      },
+      {
+        title: "Friends (TV Series 1994-2004)",
+        trailer: "https://www.youtube.com/embed/W9GYMfLcnDY?si=m3eacJ20a4-Ut-jc",
+        synopsis:
+          "Six friends living in Manhattan navigate work, relationships, and the everyday adventures that keep bringing them together.",
+      },
+    ],
   },
   {
-    src: require("assets/img/karaoke.jpeg"),
-    altText: "Slide 4",
-    caption: "Karaoke",
-  },
-  {
-    src: require("assets/img/tennis.jpg"),
-    altText: "Slide 5",
-    caption: "Tennis",
+    id: "disney",
+    label: "Disney",
+    movies: [
+      {
+        title: "Hoppers",
+        trailer: "https://www.youtube.com/embed/PypDSyIRRSs",
+        synopsis:
+          "An animal lover uses new technology to communicate with animals and discovers a world much bigger than she imagined.",
+      },
+      {
+        title: "Big Hero 6 (2014)",
+        trailer: "https://www.youtube.com/embed/z3biFxZIJOQ",
+        synopsis:
+          "A robotics prodigy and his healthcare companion Baymax join a team of friends to protect their city.",
+      },
+    ],
   },
 ];
 
-
 export default function Hobbies() {
   const [modalMov, setModalMov] = React.useState(false);
-  const [tabs, setTabs] = React.useState(1);
+  const [activeCollection, setActiveCollection] = React.useState("indonesia");
+
   return (
     <div className="section section-tabs" id="hobbies-section">
       <Container>
         <div className="title">
-          <h3 className="mb-3">When I have a free time</h3>
+          <h3 className="mb-3">When I Have Free Time</h3>
         </div>
-        <Row>
-          <Col className="ml-auto mr-auto" md="10" xl="11">
-            <div className="section">
-              <Container>
-                <Row className="justify-content-between">
-                  <Col md="6">
-                    <Row className="justify-content-between align-items-center">
-                      <UncontrolledCarousel className="custom-carousel" items={carouselItems} />
-                    </Row>
-                  </Col>
-                  <Col md="5" className="hobbies-desc">
-                    <h1 className="profile-title text-left">Hobbies</h1>
-                    <h5 className="text-on-back">취미</h5>
-                    <p className="profile-description text-left">
-                      In my free time, I enjoy staying active and exploring a mix of mental and physical challenges. <span className="text-warning">Badminton</span> and <span className="text-warning">tennis</span> are my go-to sports for staying sharp and fit, as they both push me to stay agile and competitive. When I’m in the mood to unwind, I love <span className="text-warning">watching movies or series</span>, diving into captivating stories from around the world. For something more social, I enjoy playing <span className="text-warning">billiards</span>, where I can test my precision and focus, or singing <span className="text-warning">karaoke</span>, which is always a fun way to relax and connect with friends. Each hobby brings a unique balance to my life, keeping things both exciting and rewarding.
-                    </p>
-                    <div className="btn-wrapper pt-3">
-                      <Button
-                        className="btn-simple"
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => setModalMov(true)}
-                      >
-                        <i className="tim-icons icon-video-66" /> Fav Movies
-                      </Button>
-                      {/* <Button
-                        className="btn-simple"
-                        color="info"
-                        href="#pablo"
-                        onClick={(e) => setModalSong(true)}
-                      >
-                        <i className="tim-icons icon-headphones" /> Fav Songs
-                      </Button> */}
-                    </div>
-                    <Modal
-                      modalClassName="modal-black modal-mov"
-                      isOpen={modalMov}
-                      toggle={() => setModalMov(false)}
-                    >
-                      <div className="modal-header justify-content-center">
-                        <h4>My Favorite Movies & Series</h4>
-                        <button className="close" onClick={() => setModalMov(false)}>
-                          <i className="tim-icons icon-simple-remove text-white" />
-                        </button>
-                        </div>
-                        <div>
-                            <Nav
-                              className="nav-tabs-primary justify-content-center"
-                              tabs
-                            >
-                              <NavItem>
-                                <NavLink
-                                  className={classnames({
-                                    active: tabs === 1,
-                                  })}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setTabs(1);
-                                  }}
-                                >
-                                  <ReactCountryFlag className="font-size-lg" countryCode="ID" svg />
-                                </NavLink>
-                              </NavItem>
-                              <NavItem>
-                                <NavLink
-                                  className={classnames({
-                                    active: tabs === 2,
-                                  })}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setTabs(2);
-                                  }}
-                                >
-                                  <ReactCountryFlag className="font-size-lg" countryCode="KR" svg />
-                                </NavLink>
-                              </NavItem>
-                              {/* <NavItem>
-                                <NavLink
-                                  className={classnames({
-                                    active: tabs === 3,
-                                  })}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setTabs(3);
-                                  }}
-                                >
-                                  <ReactCountryFlag className="font-size-lg" countryCode="JP" svg />
-                                </NavLink>
-                              </NavItem> */}
-                              <NavItem>
-                                <NavLink
-                                  className={classnames({
-                                    active: tabs === 4,
-                                  })}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setTabs(4);
-                                  }}
-                                >
-                                  <ReactCountryFlag className="font-size-lg" countryCode="US" svg />
-                                </NavLink>
-                              </NavItem>
-                            </Nav>
-                            </div>
-                            <div>
-                            <TabContent
-                              className="tab-subcategories"
-                              activeTab={"tab" + tabs}
-                            >
-                              <TabPane tabId="tab1">
-                                <Table className="tablesorter" >
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/sQQJEiESrK0?si=AkoW5zgnm39-9Dep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">The Big Four (2022)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>Tells the story of an elite assassin that is targeted by murderous gangsters after sparing a girl's life during a massacre.</p>
-                                  </Col>
-                                  {/* <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/s377iJorKbY?si=KhN8mV-kDp3akgBt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">One Fine Day (2017)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>One Fine Day tells the story of Mahesa, an Indonesian boy who earns his living in Barcelona seducing wealthy women who give him large sums of money to pay off invented debts. His next target is Alana, a young woman who is in a relationship with the billionaire Danu. Mahesa's plans change drastically when he discovers in Alana the love that he never knew.</p>
-                                  </Col> */}
-                                  <p className="single-line"></p>
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/GlfaHW02seM?si=P_GnmYcfKS8XKr-S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">Sore (Tropicana Web Series 2017)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>Jonathan (Dion Wiyoko) is a young man from Indonesia who lives in Italy. One day, a woman named Sore (Tika Bravani) appears and claims that she is Jonathan's wife from the future.</p>
-                                  </Col>
-                                </Table>
-                              </TabPane>
-                              <TabPane tabId="tab2">
-                                <Table className="tablesorter" >
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/kA244xewjcI?si=J7ER0Pektli55FWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">Past Lives (2023)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>Two childhood sweethearts, after decades apart, are reunited for one fateful week in New York as they confront notions of destiny, love, and the choices that make a life in this heartrending modern romance.</p>
-                                  </Col>
-                                  <p className="single-line"></p>
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/gqhUlldiLEo?si=AJd4ojTt_6gG29AG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">Happiness (K-Drama Series 2021)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>Set in the near future, a high-rise apartment building has been newly constructed in the big city. The apartment building has residents from diverse backgrounds, but a new infectious disease breaks out. Because of the outbreak, the high-rise apartment is sealed off.</p>
-                                  </Col>
-                                </Table>
-                              </TabPane>
-                              {/* <TabPane tabId="tab3">
-                                <Table className="tablesorter" >
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/oCKA3l96Ijg?si=XPOQbZXg342I-Seu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">My Rainy Days (2009)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>High schooler Rio Ozawa, falls for professor Kouki Ozawa. Though he reciprocates feelings, he's dying of cancer, explaining his distance. Rio convinces him to get risky surgery, even if he forgets her, to prolong their time together.</p>
-                                  </Col>
-                                  <p className="single-line"></p>
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/csRfeO6dH3k?si=P_KHdZ0UsRqyN8ge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">Fairy Tail (Anime series 2009-2019)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>When four young wizards team up to take jobs across the kingdom, they forge a bond more powerful than any magic and grow stronger with every mission.</p>
-                                  </Col>
-                                </Table>
-                              </TabPane> */}
-                              <TabPane tabId="tab4">
-                                <Table className="tablesorter" >
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/ZQ-YX-5bAs0?si=hmSul5BsBf-zx7xM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">Crazy Rich Asian (2018)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>Rachel Chu is happy to accompany her longtime boyfriend, Nick, to his best friend's wedding in Singapore. She's also surprised to learn that Nick's family is extremely wealthy and he's considered one of the country's most eligible bachelors. Thrust into the spotlight, Rachel must now contend with jealous socialites, quirky relatives and something far, far worse -- Nick's disapproving mother.</p>
-                                  </Col>
-                                  <p className="single-line"></p>
-                                  <Col>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/W9GYMfLcnDY?si=m3eacJ20a4-Ut-jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <h4 className="mov-title">Friends (TV Series 1994–2004)</h4>
-                                    <p className="text-justify">Synopsis: <br></br>Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.</p>
-                                  </Col>
-                                </Table>
-                              </TabPane>
-                            </TabContent>
-                         
-                      </div>
-                    </Modal>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
+        <Row className="align-items-center">
+          <Col lg="5">
+            <h1 className="profile-title text-left">Hobbies</h1>
+            <h5 className="text-on-back">Hobby</h5>
+            <p className="profile-description text-left">
+              I like balancing active hobbies, quiet moments, creative work,
+              and new experiences. These are the things that help me recharge
+              and stay curious outside of work.
+            </p>
+            <Button
+              className="btn-simple mt-3"
+              color="primary"
+              onClick={() => setModalMov(true)}
+            >
+              <i className="tim-icons icon-video-66" /> Favorite Movies
+            </Button>
+          </Col>
+          <Col lg="7">
+            <Row className="hobby-grid">
+              {hobbies.map((hobby) => (
+                <Col key={hobby.name} md="6">
+                  <div className="hobby-card">
+                    <i className={hobby.icon} />
+                    <span>{hobby.name}</span>
+                  </div>
+                </Col>
+              ))}
+            </Row>
           </Col>
         </Row>
       </Container>
+
+      <Modal
+        modalClassName="modal-black modal-mov"
+        isOpen={modalMov}
+        toggle={() => setModalMov(false)}
+      >
+        <div className="modal-header justify-content-center">
+          <h4>My Favorite Movies & Series</h4>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={() => setModalMov(false)}
+          >
+            <i className="tim-icons icon-simple-remove text-white" />
+          </button>
+        </div>
+        <ModalBody>
+          <Nav className="nav-tabs-primary movie-tabs justify-content-center" tabs>
+            {movieCollections.map((collection) => (
+              <NavItem key={collection.id}>
+                <NavLink
+                  className={classnames({
+                    active: activeCollection === collection.id,
+                  })}
+                  href={`#${collection.id}`}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    setActiveCollection(collection.id);
+                  }}
+                  title={collection.label}
+                >
+                  {collection.flag ? (
+                    <span>
+                    <img
+                      alt={`${collection.label} flag`}
+                      className="font-size-lg"
+                      src={`https://flagcdn.com/24x18/${collection.flag.toLowerCase()}.png`}
+                    />
+                    </span>
+                  ) : (
+                    <span className="disney-tab">Disney</span>
+                  )}
+                </NavLink>
+              </NavItem>
+            ))}
+          </Nav>
+          <TabContent activeTab={activeCollection}>
+            {movieCollections.map((collection) => (
+              <TabPane key={collection.id} tabId={collection.id}>
+                <Row>
+                  {collection.movies.map((movie) => (
+                    <Col key={movie.title} md="6">
+                      <div className="movie-card">
+                        {movie.trailer ? (
+                          <iframe
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            src={movie.trailer}
+                            title={`${movie.title} trailer`}
+                          />
+                        ) : (
+                          <div className="movie-poster-placeholder">
+                            <i className="tim-icons icon-video-66" />
+                            <span>Disney favorite</span>
+                          </div>
+                        )}
+                        <h4 className="mov-title">{movie.title}</h4>
+                        <p className="text-justify">{movie.synopsis}</p>
+                      </div>
+                    </Col>
+                  ))}
+                </Row>
+              </TabPane>
+            ))}
+          </TabContent>
+        </ModalBody>
+      </Modal>
     </div>
   );
 }

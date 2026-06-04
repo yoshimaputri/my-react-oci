@@ -56,7 +56,7 @@ export default function Education() {
                 <TabContent activeTab={"link" + textTabs} className="tab-edu">
                   <TabPane tabId="link1">
                     <div className="tab-flex">
-                        <Button className="btn-link btn edu-camp" target="_blank" href="https://faculty.pusan.ac.kr/sites/cseEng/index.do">School of Computer Science and Engineering,<br></br><span>Pusan National University</span></Button>
+                        <Button className="btn-link btn edu-camp" target="_blank" href="https://faculty.pusan.ac.kr/faculty/index.do">School of Computer Science and Engineering,<br></br><span>Pusan National University</span></Button>
                         <span className="year-edu">Sep 2020 - Aug 2022</span>
                     </div>
                     <div className="edu-details">

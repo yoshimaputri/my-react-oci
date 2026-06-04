@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -37,6 +37,7 @@ import {
 } from "reactstrap";
 
 export default function IndexNavbar() {
+  const navigate = useNavigate();
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
   const [color, setColor] = React.useState("navbar-transparent");
@@ -69,21 +70,25 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  const scrollToProjects = () => {
-    document.getElementById("project-section").scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/oci-page#${sectionId}`);
+    }
+
+    if (collapseOpen) {
+      toggleCollapse();
+    }
   };
-  const scrollToStoryExpertise = () => {
-    document.getElementById("story-section").scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToWorkExperience = () => {
-    document.getElementById("works-section").scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToEdu = () => {
-    document.getElementById("edu-section").scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToHobbies = () => {
-    document.getElementById("hobbies-section").scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollToProjects = () => scrollToSection("project-section");
+  const scrollToStoryExpertise = () => scrollToSection("story-section");
+  const scrollToWorkExperience = () => scrollToSection("works-section");
+  const scrollToEdu = () => scrollToSection("edu-section");
+  const scrollToHobbies = () => scrollToSection("hobbies-section");
+  const scrollToPhotography = () => scrollToSection("photography-section");
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
@@ -168,6 +173,11 @@ export default function IndexNavbar() {
                 <p className="d-lg-none d-xl-none">Instagram</p>
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/motivational-quotes">
+                <i className="tim-icons icon-book-bookmark" /> Motivational Quotes
+              </NavLink>
+            </NavItem>
             <UncontrolledDropdown nav>
               <DropdownToggle
                 caret
@@ -200,6 +210,10 @@ export default function IndexNavbar() {
                 <DropdownItem onClick={scrollToHobbies}>
                   <i className="tim-icons icon-palette" />
                   Hobbies
+                </DropdownItem>
+                <DropdownItem onClick={scrollToPhotography}>
+                  <i className="tim-icons icon-camera-18" />
+                  Photography Portfolio
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

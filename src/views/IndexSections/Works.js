@@ -47,7 +47,7 @@ export default function Works() {
     document.getElementById("works-section").scrollIntoView({ behavior: "smooth" });
   };
   const today = new Date();
-  const startDate = new Date(2023, 4);  // Month is zero-indexed (4 means May)
+  const startDate = new Date(2026, 4);  // Month is zero-indexed (4 means May)
   let years = today.getFullYear() - startDate.getFullYear();
   let months = today.getMonth() - startDate.getMonth();
   if (months < 0) {
@@ -68,13 +68,35 @@ export default function Works() {
             <Card className="card-coin card-plain card-works">
               <CardBody className="text-left padding-more-right">
                 <Row>
-                  <Col lg="8"><h4 className="work-title">Big Data Engineer <a className="company-name" target="_blank" rel="noopener noreferrer" href="https://www.ourcoms.kr/">@ Ourcoms</a>{' '}<ReactCountryFlag className="font-size-lg" countryCode="KR" svg /></h4></Col>
+                  <Col lg="8"><h4 className="work-title">Data Analyst <a className="company-name" target="_blank" rel="noopener noreferrer" href="https://www.whiteplayground.com/">@ White Playground</a>{' '}<ReactCountryFlag className="font-size-lg" countryCode="KR" svg /></h4></Col>
                   <Col className="text-right" lg="4"><p className="total-years">{years} years {months} months</p></Col>
                 </Row>
-                <p className="transparent">May 2023 - Present</p>
+                <p className="transparent">May 2026 - Present</p>
+                <ul className="text-justify">
+                  <li>Develop Data Quality Monitoring tools and dashboards to ensure data integrity and compliance.</li>
+                </ul>
+                <Row className="skillset">
+                  <Col className="font-size-lg"><i className="tim-icons icon-tag" /></Col>
+                  <Col><p className="skills">Python</p></Col>
+                  <Col><p className="skills">PySpark</p></Col>
+                  <Col><p className="skills">PostgreSQL</p></Col>
+                  <Col><p className="skills">HDFS</p></Col>
+                  <Col><p className="skills">NDAP Server</p></Col>
+                </Row>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col className="text-center" lg="10" md="12">
+            <Card className="card-coin card-plain card-works">
+              <CardBody className="text-left padding-more-right">
+                <Row>
+                  <Col lg="8"><h4 className="work-title">Big Data Engineer <a className="company-name" target="_blank" rel="noopener noreferrer" href="https://www.ourcoms.kr/">@ Ourcoms</a>{' '}<ReactCountryFlag className="font-size-lg" countryCode="KR" svg /></h4></Col>
+                  <Col className="text-right" lg="4"><p className="total-years">{' '}2 years 11 months</p></Col>
+                </Row>
+                <p className="transparent">May 2023 - March 2026</p>
                 <ul className="text-justify">
                   <li>Manage full-scale big data and integrate diverse meta and log data (KT Genie TV AI and big data projects) using PySpark, Hadoop File System, PostgreSQL, and other big data technology.</li>
-                  <li>Communicate directly with the CTO regarding technical issues, problem-solving, solutions, and project timelines.</li>
+                  <li>Integrate data flows from the on-premises PostgreSQL server on Linux into Azure Blob Storage and Azure PostgreSQL using Azure Data Factory (ADF).</li>
                 </ul>
                 <Row className="skillset">
                   <Col className="font-size-lg"><i className="tim-icons icon-tag" /></Col>
@@ -139,7 +161,7 @@ export default function Works() {
             <Card className="card-coin card-plain card-works read-more">
               <CardBody className="text-left padding-more-right">
                 <Row>
-                  <Col lg="8"><h4 className="work-title">Project Developer (Freelance) <a className="company-name" target="_blank" rel="noopener noreferrer" href="https://inc.pusan.ac.kr/inc/index.do">@ ITS, Surabaya</a>{' '}<ReactCountryFlag className="font-size-lg" countryCode="ID" svg /></h4></Col>
+                  <Col lg="8"><h4 className="work-title">Project Developer (Freelance) <a className="company-name" target="_blank" rel="noopener noreferrer" href="https://www.its.ac.id/informatika/id/departemen-teknik-informatika/">@ ITS, Surabaya</a>{' '}<ReactCountryFlag className="font-size-lg" countryCode="ID" svg /></h4></Col>
                   <Col className="text-right" lg="4"><p className="total-years">{' '}3 months</p></Col>
                 </Row>
                 <p className="transparent">Nov 2019 - Jan 2020</p>

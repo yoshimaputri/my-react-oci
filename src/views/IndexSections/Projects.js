@@ -97,6 +97,13 @@ export default function Projects() {
                     <ReactPhotoCollage {...simpikti} />
                 </Row>
                 <Row className="project-row collage-row">
+                    <h4 className="btn-info">Web Development: Visa Agency Website using ReactJS</h4>
+                    <h5 className="h5-paragraph">A web development project for a visa agency in Indonesia that provides services for obtaining visas to travel abroad.</h5>
+                    <a className="project-image-placeholder" target="_blank" rel="noopener noreferrer" href="https://visaapostillego.com/">
+                        <img alt="Visa agency website" src={require("assets/img/portfolio/webdev/React.js/travelinggeh.png")} />
+                    </a>
+                </Row>
+                <Row className="project-row collage-row">
                     <h4 className="btn-danger">Web Development: Truck E-commerce Platform using ReactJS</h4>
                     <h5 className="h5-paragraph">This web application is an e-commerce platform for buying and selling trucks in South Korea. The design requirement was to make it similar to <a target="_blank" rel="noopener noreferrer" href="http://www.encar.com/index.do">encar.com</a> , and it includes many features, including advanced administrative functionality.</h5>
                     <EmbedPDF mode="inline" style={{ width: 1200, height: 500 }} documentURL={truckEcommercePDF} />

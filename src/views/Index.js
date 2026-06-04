@@ -27,13 +27,24 @@ import Expertise from "views/IndexSections/Expertise.js";
 import Works from "views/IndexSections/Works.js";
 import Education from "./IndexSections/Education";
 import Hobbies from "./IndexSections/Hobbies";
+import PhotographyPortfolio from "./IndexSections/PhotographyPortfolio";
 import Projects from "./IndexSections/Projects";
 
 export default function Index() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
+    const sectionId = window.location.hash.replace("#", "");
+    const scrollTimer = sectionId
+      ? window.setTimeout(() => {
+          document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        }, 100)
+      : null;
+
     // Specify how to clean up after this effect:
     return function cleanup() {
+      if (scrollTimer) {
+        window.clearTimeout(scrollTimer);
+      }
       document.body.classList.toggle("index-page");
     };
   }, []);
@@ -47,6 +58,7 @@ export default function Index() {
           <Works />
           <Education />
           <Hobbies />
+          <PhotographyPortfolio />
           <Projects />
         </div>
         <Footer />
