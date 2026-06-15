@@ -147,6 +147,126 @@
     padding-left: 5px;
 }
 
+.hero-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.hero-actions .btn {
+    margin: 0;
+}
+
+.mood-toggle-btn {
+    white-space: normal;
+}
+
+.mood-recommender {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(225, 78, 202, 0.35);
+    border-radius: 8px;
+    margin-top: 22px;
+    padding: 18px;
+}
+
+.modal-mood-recommendation .modal-dialog {
+    margin-top: 5%;
+    max-width: 900px;
+    transform: translate(0, 8%) !important;
+}
+
+.modal-mood-recommendation .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.mood-modal-title {
+    text-align: center;
+}
+
+.mood-modal-title h4 {
+    margin-bottom: 8px;
+}
+
+.mood-recommender-form {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.mood-recommender-form .form-control {
+    height: 48px;
+}
+
+.mood-recommender-form .btn {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.mood-results {
+    margin-top: 0;
+}
+
+.mood-keyword {
+    color: #9a9a9a;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.mood-keyword span {
+    color: #e14eca;
+}
+
+.mood-result-group {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 14px;
+    padding-top: 16px;
+}
+
+.mood-result-group h5 {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 0.95rem;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.mood-result-group h5 i {
+    color: #1d8cf8;
+}
+
+.mood-result-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mood-result-group li {
+    margin-bottom: 12px;
+}
+
+.mood-result-group strong,
+.mood-result-group span {
+    display: block;
+}
+
+.mood-result-group strong {
+    color: white;
+    font-size: 0.92rem;
+}
+
+.mood-result-group span {
+    color: #c8c8c8;
+    font-size: 0.86rem;
+    line-height: 1.6;
+}
+
 .nav-edu {
     justify-content: space-evenly;
     padding: 0px !important;
@@ -629,6 +749,17 @@
 }
 
 @media (max-width: 767px) {
+    .hero-actions,
+    .mood-recommender-form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .hero-actions .btn,
+    .mood-recommender-form .btn {
+        width: 100%;
+    }
+
     .photography-grid {
         column-count: 1;
     }

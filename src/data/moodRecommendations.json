@@ -1,0 +1,508 @@
+[
+  {
+    "keyword": "motivate",
+    "aliases": ["motivate", "motivation", "inspire", "inspired", "drive", "driven", "ambitious", "stuck", "push"],
+    "movies": [
+      {
+        "title": "The Pursuit of Happyness",
+        "reason": "A steady reminder that persistence can carry you through difficult seasons."
+      },
+      {
+        "title": "Hidden Figures",
+        "reason": "Smart, warm, and full of people doing excellent work under pressure."
+      }
+    ],
+    "books": [
+      {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "reason": "Practical ideas for turning a small spark into a repeatable routine."
+      },
+      {
+        "title": "Range",
+        "author": "David Epstein",
+        "reason": "Encouraging if your path feels non-linear but still meaningful."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Start where you are. Use what you have. Do what you can.",
+        "author": "Arthur Ashe"
+      },
+      {
+        "text": "A winding path can become an advantage when it teaches you how to adapt.",
+        "author": "Range-inspired reflection"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Ten-minute momentum sprint",
+        "detail": "Pick one tiny task, set a timer for 10 minutes, and stop when the timer ends."
+      },
+      {
+        "name": "Progress note",
+        "detail": "Write three things you already did this week, even if they feel small."
+      }
+    ]
+  },
+  {
+    "keyword": "calm",
+    "aliases": ["calm", "peace", "peaceful", "anxious", "anxiety", "overwhelmed", "panic", "nervous"],
+    "movies": [
+      {
+        "title": "Kiki's Delivery Service",
+        "reason": "Gentle, kind, and good for a softer reset."
+      },
+      {
+        "title": "Chef",
+        "reason": "Warm comfort with food, friendship, and a lighter pace."
+      }
+    ],
+    "books": [
+      {
+        "title": "The Things You Can See Only When You Slow Down",
+        "author": "Haemin Sunim",
+        "reason": "Short reflections for creating more mental space."
+      },
+      {
+        "title": "The Comfort Book",
+        "author": "Matt Haig",
+        "reason": "Easy to dip into when you need something reassuring."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Almost everything will work again if you unplug it for a few minutes, including you.",
+        "author": "Anne Lamott"
+      },
+      {
+        "text": "You do not have to solve the whole day at once.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Five-count breathing",
+        "detail": "Breathe in for five counts, hold for five, and breathe out for five. Repeat five times."
+      },
+      {
+        "name": "Quiet walk",
+        "detail": "Walk outside for 10 minutes without checking your phone."
+      }
+    ]
+  },
+  {
+    "keyword": "happy",
+    "aliases": ["happy", "joy", "joyful", "excited", "great", "good", "grateful", "cheerful"],
+    "movies": [
+      {
+        "title": "Paddington 2",
+        "reason": "Bright, generous, and very easy to enjoy."
+      },
+      {
+        "title": "Sing Street",
+        "reason": "Creative energy, music, and a hopeful little spark."
+      }
+    ],
+    "books": [
+      {
+        "title": "The Happiness Project",
+        "author": "Gretchen Rubin",
+        "reason": "A playful way to notice and build on good moods."
+      },
+      {
+        "title": "Big Magic",
+        "author": "Elizabeth Gilbert",
+        "reason": "Great for channeling good energy into creative action."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Enjoy the little things, for one day you may look back and realize they were the big things.",
+        "author": "Robert Brault"
+      },
+      {
+        "text": "Let the good mood become fuel for something kind.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Share the spark",
+        "detail": "Send one warm message to someone you appreciate."
+      },
+      {
+        "name": "Joy playlist",
+        "detail": "Play three songs that match your mood and move a little."
+      }
+    ]
+  },
+  {
+    "keyword": "sad",
+    "aliases": ["sad", "down", "blue", "cry", "lonely", "hurt", "heartbroken", "empty"],
+    "movies": [
+      {
+        "title": "Inside Out",
+        "reason": "A tender reminder that sadness has a place and a purpose."
+      },
+      {
+        "title": "Little Miss Sunshine",
+        "reason": "Messy, human, funny, and quietly hopeful."
+      }
+    ],
+    "books": [
+      {
+        "title": "The Boy, the Mole, the Fox and the Horse",
+        "author": "Charlie Mackesy",
+        "reason": "Soft, visual encouragement for low-energy moments."
+      },
+      {
+        "title": "Reasons to Stay Alive",
+        "author": "Matt Haig",
+        "reason": "Honest and compassionate writing about hard days."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Feelings are much like waves; we cannot stop them from coming but we can choose which one to surf.",
+        "author": "Jonatan Martensson"
+      },
+      {
+        "text": "Be gentle with yourself; you are still moving through it.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Small care reset",
+        "detail": "Drink water, wash your face, and open a window for fresh air."
+      },
+      {
+        "name": "Park walk",
+        "detail": "Walk in the park or around the block for 10 minutes."
+      }
+    ]
+  },
+  {
+    "keyword": "focus",
+    "aliases": ["focus", "focused", "productive", "study", "work", "deadline", "busy", "distracted"],
+    "movies": [
+      {
+        "title": "The Social Network",
+        "reason": "Fast-paced and sharp if you want work-mode energy."
+      },
+      {
+        "title": "Moneyball",
+        "reason": "Good for analytical thinking and trusting a clear strategy."
+      }
+    ],
+    "books": [
+      {
+        "title": "Deep Work",
+        "author": "Cal Newport",
+        "reason": "A strong fit when you want fewer distractions and more depth."
+      },
+      {
+        "title": "Essentialism",
+        "author": "Greg McKeown",
+        "reason": "Useful for choosing what matters and dropping what does not."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "The successful warrior is the average person, with laser-like focus.",
+        "author": "Bruce Lee"
+      },
+      {
+        "text": "One clear next step beats ten noisy possibilities.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Single-tab session",
+        "detail": "Close extra tabs and work on one task for 25 minutes."
+      },
+      {
+        "name": "Priority three",
+        "detail": "Write the three most important tasks, then start with the smallest one."
+      }
+    ]
+  },
+  {
+    "keyword": "tired",
+    "aliases": ["tired", "sleepy", "exhausted", "burned out", "burnout", "drained", "low energy"],
+    "movies": [
+      {
+        "title": "Julie & Julia",
+        "reason": "Low-stakes, warm, and comfortable when your energy is thin."
+      },
+      {
+        "title": "The Intern",
+        "reason": "A gentle watch with kind workplace energy."
+      }
+    ],
+    "books": [
+      {
+        "title": "Rest",
+        "author": "Alex Soojung-Kim Pang",
+        "reason": "A thoughtful case for recovery as part of good work."
+      },
+      {
+        "title": "Wintering",
+        "author": "Katherine May",
+        "reason": "Good when you need permission to slow down."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Rest is not idleness.",
+        "author": "John Lubbock"
+      },
+      {
+        "text": "You are allowed to restore before you restart.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Twenty-minute pause",
+        "detail": "Lie down, dim the light, and let your body actually stop for 20 minutes."
+      },
+      {
+        "name": "Gentle stretch",
+        "detail": "Stretch your neck, shoulders, and back for five slow minutes."
+      }
+    ]
+  },
+  {
+    "keyword": "partner",
+    "aliases": ["partner", "relationship", "couple", "boyfriend", "girlfriend", "love", "dating", "together"],
+    "movies": [
+      {
+        "title": "Before Sunrise",
+        "reason": "A thoughtful, conversation-driven story about connection and curiosity."
+      },
+      {
+        "title": "About Time",
+        "reason": "Warm, romantic, and gentle about choosing love in everyday moments."
+      }
+    ],
+    "books": [
+      {
+        "title": "Attached",
+        "author": "Amir Levine and Rachel Heller",
+        "reason": "Helpful for understanding emotional needs and relationship patterns."
+      },
+      {
+        "title": "The 5 Love Languages",
+        "author": "Gary Chapman",
+        "reason": "Simple prompts for noticing how you and your partner give and receive care."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Love is built in the small moments where both people keep showing up.",
+        "author": "Mood recommender"
+      },
+      {
+        "text": "Being clear about your needs creates room for a more secure relationship.",
+        "author": "Attached-inspired reflection"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Ten-minute check-in",
+        "detail": "Ask your partner one gentle question and listen without fixing anything."
+      },
+      {
+        "name": "Small appreciation",
+        "detail": "Send one message that names something specific you appreciate about them."
+      }
+    ]
+  },
+  {
+    "keyword": "marriage",
+    "aliases": ["marriage", "married", "wife", "husband", "spouse", "wedding", "commitment", "family"],
+    "movies": [
+      {
+        "title": "The Story of Us",
+        "reason": "A reflective look at long-term love, conflict, and choosing each other again."
+      },
+      {
+        "title": "Fireproof",
+        "reason": "Centered on commitment, repair, and intentional care in marriage."
+      }
+    ],
+    "books": [
+      {
+        "title": "The Seven Principles for Making Marriage Work",
+        "author": "John Gottman and Nan Silver",
+        "reason": "Practical guidance for friendship, trust, and healthier conflict."
+      },
+      {
+        "title": "Hold Me Tight",
+        "author": "Sue Johnson",
+        "reason": "Good for understanding emotional bonds and patterns during conflict."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "A strong marriage is renewed through ordinary acts of patience.",
+        "author": "Mood recommender"
+      },
+      {
+        "text": "Choose the relationship before choosing the need to be right.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Repair sentence",
+        "detail": "Say one honest sentence that starts with: I want us to feel close again."
+      },
+      {
+        "name": "Shared plan",
+        "detail": "Plan one simple thing to do together this week, even if it is just coffee."
+      }
+    ]
+  },
+  {
+    "keyword": "life",
+    "aliases": ["life", "meaning", "purpose", "lost", "direction", "future", "change", "growth"],
+    "movies": [
+      {
+        "title": "The Secret Life of Walter Mitty",
+        "reason": "A hopeful reminder that life can open up through brave small steps."
+      },
+      {
+        "title": "Soul",
+        "reason": "Gentle and thoughtful about purpose, presence, and ordinary joy."
+      }
+    ],
+    "books": [
+      {
+        "title": "Man's Search for Meaning",
+        "author": "Viktor E. Frankl",
+        "reason": "Deep reflections on meaning, resilience, and choosing your response."
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "reason": "Simple and reflective when you are thinking about your path."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Life becomes clearer when you take the next honest step.",
+        "author": "Mood recommender"
+      },
+      {
+        "text": "You do not need to understand the whole road to keep walking.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "One-page reflection",
+        "detail": "Write what feels heavy, what still matters, and one next step you can take."
+      },
+      {
+        "name": "Fresh-air reset",
+        "detail": "Walk outside for 15 minutes and notice five details around you."
+      }
+    ]
+  },
+  {
+    "keyword": "laugh",
+    "aliases": ["laugh", "need to laugh", "funny", "comedy", "silly", "joke", "humor", "cheer me up"],
+    "movies": [
+      {
+        "title": "The Nice Guys",
+        "reason": "Fast, chaotic comedy with great timing if you need a real laugh."
+      },
+      {
+        "title": "Crazy Rich Asians",
+        "reason": "Bright, stylish, and full of fun social comedy."
+      }
+    ],
+    "books": [
+      {
+        "title": "Bossypants",
+        "author": "Tina Fey",
+        "reason": "Smart, quick, and easy to read when you want lighter energy."
+      },
+      {
+        "title": "Is Everyone Hanging Out Without Me?",
+        "author": "Mindy Kaling",
+        "reason": "Playful essays with warm and awkward humor."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "A good laugh is a tiny vacation for the mind.",
+        "author": "Mood recommender"
+      },
+      {
+        "text": "Let yourself be ridiculous for a minute; seriousness can wait.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Comedy clip break",
+        "detail": "Watch one short comedy clip and stop after two videos so it stays refreshing."
+      },
+      {
+        "name": "Funny memory note",
+        "detail": "Write down one ridiculous moment from your week and send it to a friend."
+      }
+    ]
+  },
+  {
+    "keyword": "general",
+    "aliases": ["okay", "normal", "fine", "not sure", "confused", "meh", "mixed"],
+    "movies": [
+      {
+        "title": "The Secret Life of Walter Mitty",
+        "reason": "A balanced nudge toward wonder, courage, and motion."
+      },
+      {
+        "title": "Big Hero 6",
+        "reason": "Comforting, heartfelt, and good for a gentle lift."
+      }
+    ],
+    "books": [
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "reason": "Simple, reflective, and good when you are figuring out your next feeling."
+      },
+      {
+        "title": "Attached",
+        "author": "Amir Levine and Rachel Heller",
+        "reason": "Helpful if your mood is connected to relationships or emotional needs."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "You do not need a perfect mood to take a kind next step.",
+        "author": "Mood recommender"
+      },
+      {
+        "text": "Clarity often arrives after movement, not before it.",
+        "author": "Mood recommender"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Ten-minute tidy",
+        "detail": "Clear one small surface near you to make the room feel lighter."
+      },
+      {
+        "name": "Mood check-in",
+        "detail": "Write one sentence that starts with: right now, I need..."
+      }
+    ]
+  }
+]
